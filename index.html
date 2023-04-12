@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>maweather.com</title>
+    <link rel="stylesheet" href="./reboot.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="main flexr">
+      <div class="background-picture">
+        <img
+          src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681206379/maweatherapp/picture-clear-sky-day_nljg6p.jpg"
+          class="picture-weather-type"
+          alt="Picture of weather type"
+        />
+      </div>
+
+      <div class="weather-app flexr">
+        <div class="container flexc">
+          
+          <p class="empty"></p>
+          <p class="logo">ma weather</p>
+          <div class="flexc">
+            <h1 class="temp">16&#176;</h1>
+            <div class="city-time">
+              <h1 class="city-name">London</h1>
+              <small>
+                <p class="time">06:09</p>
+                <p class="date">Monday Sep 19</p>
+              </small>
+            </div>
+            <div class="weather flexr">
+              <img
+                src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134909/maweatherapp/icon-clear-sky-day_yrsvbs.png"
+                class="icon-weather-forecast"
+                alt="Icon for weather forecast"
+                title="weather forecast"
+              />
+              <p class="weather-forecast">Sunny</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header>
+        <div class="panel flexc">
+          <input
+            type="text"
+            class="search"
+            placeholder="Type any city here..."
+            value=""
+          />
+          <button type="submit" class="searchButton">Search</button>
+          <button class="add-to-favorites">Add to Favorites</button>
+          <div class="favouritesWrapper">
+            <h4>Favourites:</h4>
+            <ul class="favourites-list"></ul>
+          </div>
+        </div>
+
+        <nav class="navigation flexr">
+          <button
+            class="mobile-nav__toggle"
+            aria-controls="primaryNav"
+            aria-controls="emptySpace"
+            aria-expanded="false"
+            id="toggleButton"
+          >
+            <span class="sr-only">Menu</span>
+          </button>
+          <ul
+            id="primaryNav"
+            class="main__navigation flexc spaced"
+            data-visible="false"
+          >
+            <li class="navigation__item">
+              <a href="https://www.bloomberg.com/originals/live" target="_blank"
+                >Live weather</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="https://www.bloomberg.com/originals/live" target="_blank"
+                >24h Forecast</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="https://www.bloomberg.com/originals/live" target="_blank"
+                >10Day Forecast</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="https://www.bloomberg.com/originals/live" target="_blank"
+                >Favorite Cities</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="panel2">
+      </div>
+    </div>
+
+    <footer>
+      <div class="hourly-forecast flexc">
+        <p class="hourly-forecast-title">Hourly Forecast</p>
+        <div class="fiveh-forecast flexr">
+          <div class="now flexc">
+            <p class="forecast-hour">Now</p>
+            <p class="forecast-temperature-hour">temp</p>
+            <img
+              src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134909/maweatherapp/icon-clear-sky-day_yrsvbs.png"
+              class="forecast-weather-hour"
+              alt="Icon for weather forecast"
+              title="weather forecast"
+            />
+            <div class="humidity flexr centered">
+              <p class="forecast-humididty-hour">humidity</p>
+              <img
+                src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134910/maweatherapp/icon-humidity_unabmr.png"
+                class="icon-humidity"
+                alt="Icon of humidity"
+                title="humidity"
+              />
+            </div>
+          </div>
+          <div class="plus1h flexc">
+            <p class="forecast-hour">plus1h</p>
+            <p class="forecast-temperature-hour">temp</p>
+            <img
+              src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134909/maweatherapp/icon-clear-sky-day_yrsvbs.png"
+              class="forecast-weather-hour"
+              alt="Icon for weather forecast"
+              title="weather forecast"
+            />
+            <div class="flexr centered">
+              <p class="forecast-humididty-hour">humidity</p>
+              <img
+                src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134910/maweatherapp/icon-humidity_unabmr.png"
+                class="icon-humidity"
+                alt="Icon of humidity"
+                title="humidity"
+              />
+            </div>
+          </div>
+          <div class="plus2h flexc">
+            <p class="forecast-hour">plus2h</p>
+            <p class="forecast-temperature-hour">temp</p>
+            <img
+              src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134909/maweatherapp/icon-clear-sky-day_yrsvbs.png"
+              class="forecast-weather-hour"
+              alt="Icon for weather forecast"
+              title="weather forecast"
+            />
+            <div class="flexr centered">
+              <p class="forecast-humididty-hour">humidity</p>
+              <img
+                src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134910/maweatherapp/icon-humidity_unabmr.png"
+                class="icon-humidity"
+                alt="Icon of humidity"
+                title="humidity"
+              />
+            </div>
+          </div>
+          <div class="plus3h flexc">
+            <p class="forecast-hour">plus3h</p>
+            <p class="forecast-temperature-hour">temp</p>
+            <img
+              src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134909/maweatherapp/icon-clear-sky-day_yrsvbs.png"
+              class="forecast-weather-hour"
+              alt="Icon for weather forecast"
+              title="weather forecast"
+            />
+            <div class="flexr centered">
+              <p class="forecast-humididty-hour">humidity</p>
+              <img
+                src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134910/maweatherapp/icon-humidity_unabmr.png"
+                class="icon-humidity"
+                alt="Icon of humidity"
+                title="humidity"
+              />
+            </div>
+          </div>
+          <div class="plus4h flexc">
+            <p class="forecast-hour">plus4h</p>
+            <p class="forecast-temperature-hour">temp</p>
+            <img
+              src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134909/maweatherapp/icon-clear-sky-day_yrsvbs.png"
+              class="forecast-weather-hour"
+              alt="Icon for weather forecast"
+              title="weather forecast"
+            />
+            <div class="flexr centered">
+              <p class="forecast-humididty-hour">humidity</p>
+              <img
+                src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134910/maweatherapp/icon-humidity_unabmr.png"
+                class="icon-humidity"
+                alt="Icon of humidity"
+                title="humidity"
+              />
+            </div>
+          </div>
+        </div>
+        <button>
+          <p class="next-tf-hours">Next 24 Hours</p>
+        </button>
+      </div>
+
+      <div class="daily-forecast flexc">
+        <p class="daily-forecast-title">Daily Forecast</p>
+        <div class="fived-forecast flexr">
+          <div class="today flexc">
+            <p class="forecast-day">Today</p>
+            <div class="temp-day-night flexr centered">
+              <p class="forecast-temperature-day" title="During day">temp</p>
+              <p class="backslash">/</p>
+              <p class="forecast-temperature-night" title="During night">
+                temp
+              </p>
+            </div>
+            <img
+              src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134909/maweatherapp/icon-clear-sky-day_yrsvbs.png"
+              class="forecast-weather-day"
+              alt="Icon for weather forecast"
+              title="weather forecast"
+            />
+            <div class="humidity flexr centered">
+              <p class="forecast-humidity-day">humidity</p>
+              <img
+                src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134910/maweatherapp/icon-humidity_unabmr.png"
+                class="icon-humidity"
+                alt="Icon of humidity"
+                title="humidity"
+              />
+            </div>
+          </div>
+          <div class="plus1d flexc">
+            <p class="forecast-day">plus1d</p>
+            <div class="temp-day-night flexr centered">
+              <p class="forecast-temperature-day" title="During day">temp</p>
+              <p class="backslash">/</p>
+              <p class="forecast-temperature-night" title="During night">
+                temp
+              </p>
+            </div>
+            <img
+              src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134909/maweatherapp/icon-clear-sky-day_yrsvbs.png"
+              class="forecast-weather-day"
+              alt="Icon for weather forecast"
+              title="weather forecast"
+            />
+            <div class="humidity flexr centered">
+              <p class="forecast-humidity-day">humidity</p>
+              <img
+                src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134910/maweatherapp/icon-humidity_unabmr.png"
+                class="icon-humidity"
+                alt="Icon of humidity"
+                title="humidity"
+              />
+            </div>
+          </div>
+          <div class="plus2d flexc">
+            <p class="forecast-day">plus2d</p>
+            <div class="temp-day-night flexr centered">
+              <p class="forecast-temperature-day" title="During day">temp</p>
+              <p class="backslash">/</p>
+              <p class="forecast-temperature-night" title="During night">
+                temp
+              </p>
+            </div>
+            <img
+              src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134909/maweatherapp/icon-clear-sky-day_yrsvbs.png"
+              class="forecast-weather-day"
+              alt="Icon for weather forecast"
+              title="weather forecast"
+            />
+            <div class="humidity flexr centered">
+              <p class="forecast-humidity-day">humidity</p>
+              <img
+                src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134910/maweatherapp/icon-humidity_unabmr.png"
+                class="icon-humidity"
+                alt="Icon of humidity"
+                title="humidity"
+              />
+            </div>
+          </div>
+          <div class="plus3d flexc">
+            <p class="forecast-day">plus3d</p>
+            <div class="temp-day-night flexr centered">
+              <p class="forecast-temperature-day" title="During day">temp</p>
+              <p class="backslash">/</p>
+              <p class="forecast-temperature-night" title="During night">
+                temp
+              </p>
+            </div>
+            <img
+              src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134909/maweatherapp/icon-clear-sky-day_yrsvbs.png"
+              class="forecast-weather-day"
+              alt="Icon for weather forecast"
+              title="weather forecast"
+            />
+            <div class="humidity flexr centered">
+              <p class="forecast-humidity-day">humidity</p>
+              <img
+                src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134910/maweatherapp/icon-humidity_unabmr.png"
+                class="icon-humidity"
+                alt="Icon of humidity"
+                title="humidity"
+              />
+            </div>
+          </div>
+          <div class="plus4d flexc">
+            <p class="forecast-day">plus4d</p>
+            <div class="temp-day-night flexr centered">
+              <p class="forecast-temperature-day" title="During day">temp</p>
+              <p class="backslash">/</p>
+              <p class="forecast-temperature-night" title="During night">
+                temp
+              </p>
+            </div>
+            <img
+              src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134909/maweatherapp/icon-clear-sky-day_yrsvbs.png"
+              class="forecast-weather-day"
+              alt="Icon for weather forecast"
+              title="weather forecast"
+            />
+            <div class="humidity flexr centered">
+              <p class="forecast-humidity-day">humidity</p>
+              <img
+                src="https://res.cloudinary.com/dewznnjqr/image/upload/v1681134910/maweatherapp/icon-humidity_unabmr.png"
+                class="icon-humidity"
+                alt="Icon of humidity"
+                title="humidity"
+              />
+            </div>
+          </div>
+        </div>
+        <button>
+          <p class="next-seven-days">Next 7 Days</p>
+        </button>
+      </div>
+
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
